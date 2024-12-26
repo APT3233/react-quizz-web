@@ -1,0 +1,79 @@
+
+.content__quizz{
+  width: 100%;
+  margin-top: 70px;
+}
+.container-quizz{
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.quizz__item{
+  padding: 20px 0;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  /* filter: drop-shadow(0rem 0rem 1.5rem maroon)   */
+  border-radius: 7px;
+  background-image: linear-gradient(to right, #e5dbe1, #e6c7cf, #e6b3b3, #dfa38f, #cd986a, #cd986a, #cd986a, #cd986a, #dfa38f, #e6b3b3, #e6c7cf, #e5dbe1);
+}
+.quizz__item img{
+  width: 170px;
+  height: 170px;
+  margin-right: 50px;
+  background-size: cover;
+}
+button{
+  width: 110px!important;
+  height: 45px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quizz__item h3{
+  font-size: 27px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px)  {
+  .quizz__item{
+    width: 100%;
+  }
+  h3{
+    font-size: 20px!important;
+  }
+  img{
+    width: 120px!important;
+    height: 120px!important;
+    margin-right: 20px!important;
+  }
+  button{
+    width: 90px!important;
+    height: 35px;
+    font-size: 11px;
+    margin: 0;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Quizz Item ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.quizz__content--ques{
+  max-width: 95%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn__action{
+  display: flex;
+  justify-content: center;
+}

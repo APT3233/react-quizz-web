@@ -1,0 +1,62 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main .not-found-404 {
+  height: 280px;
+  position: relative;
+  z-index: -1;
+}
+
+.main h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 230px;
+  margin: 0px;
+  font-weight: 1000;
+  position: relative; 
+  text-align: center; 
+  background: url('../../../public/img/bg404.jpg') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+.main p {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px; /* Thêm khoảng cách giữa h1 và p */
+}
+.main button{
+  border: transparent;
+  padding: 15px 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  font-weight: 700;
+  color: white;
+  background: #0046d5;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 15px -5px #0046d5;
+}
+@media only screen and (max-width: 767px) {
+  .not-found-404 {
+    height: 142px;
+  }
+  h1 {
+    font-size: 112px;
+  }
+}
