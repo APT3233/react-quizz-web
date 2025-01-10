@@ -54,11 +54,10 @@ process.on("SIGINT", () => {
   console.log("Received SIGINT. Closing database connections...");
 
   pool.end((err) => {
-    if (err) {
+    if (err)
       console.error("Error while closing the database connection:", err);
-    } else {
+    else 
       console.log("Database connections closed gracefully.");
-    }
     process.exit();
   });
 });

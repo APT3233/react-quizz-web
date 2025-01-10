@@ -14,7 +14,7 @@ app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 
 var port = 4444;
 const args = process.argv.slice(2);
-if (args[0] == "-p") port = parseInt(args[1]);
+if (args[0] === "-p") port = parseInt(args[1]);
 
 app.use("/api", RouterApi);
 app.use("/user", RouterUser);
